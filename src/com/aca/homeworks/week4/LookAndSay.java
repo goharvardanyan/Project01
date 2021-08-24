@@ -1,7 +1,7 @@
 package com.aca.homeworks.week4;
 
 public class LookAndSay {
-    public String countAndSay(int n) {
+    public String lookAndSay(int n) {
         if (n == 1) {
             return "1";
         }
