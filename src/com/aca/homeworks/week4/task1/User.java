@@ -1,4 +1,6 @@
-package com.aca.homeworks.week4;
+package com.aca.homeworks.week4.task1;
+
+import com.aca.homeworks.week4.task2.AssertionUtils;
 
 public final class User {
 

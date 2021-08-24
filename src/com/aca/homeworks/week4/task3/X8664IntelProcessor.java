@@ -1,4 +1,6 @@
-package com.aca.homeworks.week4;
+package com.aca.homeworks.week4.task3;
+
+import com.aca.homeworks.week4.task3.Processor;
 
 public class X8664IntelProcessor implements Processor {
 

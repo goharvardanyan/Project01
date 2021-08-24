@@ -1,4 +1,4 @@
-package com.aca.homeworks.week4;
+package com.aca.homeworks.week4.task2;
 
 public final class ImmutablePoint implements Point {
 

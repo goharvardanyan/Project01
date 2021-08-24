@@ -1,4 +1,11 @@
-package com.aca.homeworks.week4;
+package com.aca.homeworks.week4.task3;
+
+import com.aca.homeworks.week4.task2.Colour;
+import com.aca.homeworks.week4.task1.User;
+import com.aca.homeworks.week4.task1.UserGroup;
+import com.aca.homeworks.week4.task2.ColouredTriangle;
+import com.aca.homeworks.week4.task2.ImmutablePoint;
+import com.aca.homeworks.week4.task2.Triangle;
 
 public class Printer {
 

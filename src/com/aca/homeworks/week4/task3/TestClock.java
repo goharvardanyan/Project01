@@ -1,4 +1,8 @@
-package com.aca.homeworks.week4;
+package com.aca.homeworks.week4.task3;
+
+import com.aca.homeworks.week4.task3.Clock;
+import com.aca.homeworks.week4.task3.FastClock;
+import com.aca.homeworks.week4.task3.SlowClock;
 
 import java.util.Scanner;
 

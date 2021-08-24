@@ -1,4 +1,4 @@
-package com.aca.homeworks.week4;
+package com.aca.homeworks.week4.task3;
 
 public class ArmProcessor implements Processor {
 
