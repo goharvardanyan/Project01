@@ -26,7 +26,7 @@ public class NumbersGeneratorAndPrinter {
         List<Double> list = new ArrayList<>();
         Random random = new Random();
         for (int i = 0; i < count; i++) {
-            list.add(random.nextDouble());
+            list.add(random.nextDouble() * random.nextInt(2000));
         }
         return list;
     }
