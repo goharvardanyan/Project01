@@ -51,17 +51,16 @@ public class Triangle {
     }
 
     @Override
-    public boolean equals(Object object) {
-        if (object == this) {
-            return true;
-        }
-        if (!(object instanceof Triangle)) {
-            return false;
-        }
-        Triangle triangle = (Triangle) object;
-        return Objects.equals(triangle.getA(), getA()) &&
-                Objects.equals(triangle.getB(), getB()) &&
-                Objects.equals(triangle.getC(), getC());
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Triangle triangle = (Triangle) o;
+        return Objects.equals(a, triangle.a) && Objects.equals(b, triangle.b) && Objects.equals(c, triangle.c);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(a, b, c);
     }
 
     @Override

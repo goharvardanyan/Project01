@@ -1,5 +1,7 @@
 package com.aca.homeworks.week4.task2;
 
+import java.util.Objects;
+
 public final class ImmutablePoint implements Point {
 
     private final int x;
@@ -40,22 +42,21 @@ public final class ImmutablePoint implements Point {
     }
 
     @Override
-    public boolean equals(Object object) {
-        if (object == this){
-            return true;
-        }
-        if (!(object instanceof ImmutablePoint)) {
-            return false;
-        }
-        ImmutablePoint point = (ImmutablePoint) object;
-        return x == point.getX() &&
-                y == point.getY();
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ImmutablePoint that = (ImmutablePoint) o;
+        return x == that.x && y == that.y;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y);
     }
 
     @Override
     public String toString() {
         return "x - " + this.getX() + ", y - " + this.getY();
     }
-
 
 }
