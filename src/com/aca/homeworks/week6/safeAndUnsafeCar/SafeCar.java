@@ -7,7 +7,7 @@ public class SafeCar implements Car {
 
     @Override
     public synchronized void add(String passengerName) {
-        if (count < 6) {
+        if (count < passengerNames.length) {
             passengerNames[count++] = passengerName;
         }
         System.out.println("There is no space");

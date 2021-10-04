@@ -8,7 +8,7 @@ public class UnsafeCar implements Car {
 
     @Override
     public void add(String passengerName) {
-        if (count < 6) {
+        if (count < passengerNames.length) {
             passengerNames[count++] = passengerName;
         }
         System.out.println("There is no space");
