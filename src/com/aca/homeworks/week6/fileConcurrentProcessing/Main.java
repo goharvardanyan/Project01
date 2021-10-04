@@ -3,10 +3,13 @@ package com.aca.homeworks.week6.fileConcurrentProcessing;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
+        List<Thread> list = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             final int j = i;
             Thread thread = new Thread(new Runnable() {
@@ -29,6 +32,13 @@ public class Main {
                 }
             });
             thread.start();
+            list.add(thread);
+        }
+        for (Thread t: list) {
+            try {
+                t.join();
+            } catch (InterruptedException e) {
+            }
         }
     }
 }
